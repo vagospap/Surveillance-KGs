@@ -1,0 +1,1918 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://i-lab.aegean.gr/kotis/Ontologies/surveillance/surveillanceOnto"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://i-lab.aegean.gr/kotis/Ontologies/surveillance/surveillanceOnto"
+     versionIRI="http://i-lab.aegean.gr/kotis/Ontologies/surveillance/surveillanceOnto-v02">
+    <Prefix name="" IRI="http://i-lab.aegean.gr/kotis/Ontologies/surveillance/surveillanceOnto"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en">E. Paparidis, K. Kotis</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/date"/>
+        <Literal xml:lang="en">17-04-2022</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal xml:lang="en">CC0 1.0 Universal</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Experimental ontology to support research in biased semantics in surveillance domain: Bias in knowledge capture, a barrier in fair offender capture.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">In this version, we mitigate race bias at the level of schema/semantics by completely removing the &quot;Skin&quot; node</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en">Surveillance ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">0.6</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Backpack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carried_accessory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Offender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terrorist"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#carries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wears"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://dbpedia.org/ontology/sex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B23"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B26"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B27"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B28"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B29"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B31"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B32"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B33"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B34"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B35"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B36"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B37"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B38"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B39"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Greece"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W23"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W26"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W27"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W28"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W29"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W31"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W32"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W33"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W34"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W35"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W36"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W37"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W38"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#W39"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#knife"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#large-backpack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#long-height-body"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#medium-height-body"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#normal-hood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pistol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#short-height-body"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#shotgun"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#small-backpack"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Backpack"/>
+        <Class IRI="#Carried_accessory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gun"/>
+        <Class IRI="#Carried_accessory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Offender"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robber"/>
+        <Class IRI="#Offender"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terrorist"/>
+        <Class IRI="#Offender"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Country"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B23"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B26"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B27"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B28"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B29"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B31"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B32"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B33"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B34"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B35"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B36"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B37"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B38"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#B39"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Country"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W23"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W26"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W27"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W28"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W29"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W31"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W32"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W33"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W34"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W35"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W36"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W37"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W38"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="#W39"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hood"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hood"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gun"/>
+        <NamedIndividual IRI="#knife"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Backpack"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Body"/>
+        <NamedIndividual IRI="#long-height-body"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Body"/>
+        <NamedIndividual IRI="#medium-height-body"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hood"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gun"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Body"/>
+        <NamedIndividual IRI="#short-height-body"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gun"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Backpack"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B10"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B10"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B10"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B10"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B11"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B11"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B11"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B11"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B12"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B12"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B12"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B12"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B13"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B13"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B13"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B13"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B14"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B14"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B14"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B14"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B15"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B15"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B15"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B15"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B16"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B16"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B16"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B16"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B17"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B17"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B17"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B17"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B18"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B18"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B18"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B18"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B19"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B19"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B19"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B19"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B20"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B20"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B20"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B20"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B21"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B21"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B21"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B21"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B22"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B22"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B22"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B22"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B23"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B23"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B23"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B23"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B24"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B24"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B24"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B24"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B25"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B25"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B25"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B25"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B26"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B26"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B26"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B26"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B27"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B27"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B27"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B27"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B28"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B28"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B28"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B28"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B29"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B29"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B29"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B29"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B30"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B30"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B30"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B30"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B31"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B31"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B31"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B31"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B32"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B32"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B32"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B32"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B33"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B33"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B33"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B33"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B34"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B34"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B34"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B34"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B35"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B35"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B35"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B35"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B36"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B36"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B36"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B36"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B37"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B37"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B37"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B37"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B38"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B38"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B38"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B38"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#B39"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B39"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#B39"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#B39"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W10"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W10"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W10"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W10"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W11"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W11"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W11"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W11"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W12"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W12"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W12"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W12"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W13"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W13"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W13"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W13"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W14"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W14"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W14"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W14"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W15"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W15"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W15"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W15"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W16"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W16"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W16"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W16"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W17"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W17"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W17"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W17"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W18"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W18"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W18"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W18"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W19"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W19"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W19"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W19"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W20"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W20"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W20"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W20"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W21"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W21"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W21"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W21"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W22"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W22"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W22"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W22"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W23"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W23"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W23"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W23"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W24"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W24"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W24"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W24"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W25"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W25"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W25"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W25"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W26"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W26"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W26"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W26"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W27"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W27"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W27"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W27"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W28"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W28"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W28"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W28"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W29"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W29"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W29"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W29"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W30"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W30"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W30"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W30"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W31"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W31"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W31"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W31"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W32"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W32"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W32"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W32"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W33"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W33"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W33"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W33"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W34"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W34"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W34"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W34"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W35"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W35"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W35"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W35"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W36"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W36"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W36"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W36"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W37"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W37"/>
+        <NamedIndividual IRI="#knife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W37"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W37"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W38"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W38"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W38"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W38"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#W39"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W39"/>
+        <NamedIndividual IRI="#pistol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#W39"/>
+        <NamedIndividual IRI="#small-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#W39"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+        <NamedIndividual IRI="#large-backpack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+        <NamedIndividual IRI="#full-face-hood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#half-face-hood"/>
+        <NamedIndividual IRI="#shotgun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wears"/>
+        <NamedIndividual IRI="#large-backpack"/>
+        <NamedIndividual IRI="#normal-hood"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/hasLocation"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#carries"/>
+        <Class IRI="#Offender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBody"/>
+        <Class IRI="#Offender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wears"/>
+        <Class IRI="#Offender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
+        <Class IRI="http://dbpedia.org/ontology/Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#carries"/>
+        <Class IRI="#Carried_accessory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBody"/>
+        <Class IRI="#Body"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wears"/>
+        <Class IRI="#Hood"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://dbpedia.org/ontology/sex"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://dbpedia.org/ontology/sex"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
