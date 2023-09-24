@@ -7,7 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://i-lab.aegean.gr/kotis/Ontologies/surveillance/surveillanceOnto"
      versionIRI="http://i-lab.aegean.gr/kotis/Ontologies/surveillance/surveillanceOnto-v02">
-    <Prefix name="" IRI="http://i-lab.aegean.gr/ontologies/surveillance"/>
+    <Prefix name="" IRI="http://i-lab.aegean.gr/kotis/Ontologies/surveillance/surveillanceOnto"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -96,15 +96,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Greece"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Mr_K"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Mrs_L"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Some_M"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#black_skin"/>
@@ -243,18 +234,6 @@
         <NamedIndividual IRI="#Greece"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://dbpedia.org/ontology/Person"/>
-        <NamedIndividual IRI="#Mr_K"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://dbpedia.org/ontology/Person"/>
-        <NamedIndividual IRI="#Mrs_L"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://dbpedia.org/ontology/Person"/>
-        <NamedIndividual IRI="#Some_M"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Skin"/>
         <NamedIndividual IRI="#black_skin"/>
     </ClassAssertion>
@@ -306,66 +285,6 @@
         <Class IRI="#Skin"/>
         <NamedIndividual IRI="#white_skin"/>
     </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
-        <NamedIndividual IRI="#Mr_K"/>
-        <NamedIndividual IRI="#Greece"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#carries"/>
-        <NamedIndividual IRI="#Mr_K"/>
-        <NamedIndividual IRI="#knife"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#carries"/>
-        <NamedIndividual IRI="#Mr_K"/>
-        <NamedIndividual IRI="#large-backpack"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSkin"/>
-        <NamedIndividual IRI="#Mr_K"/>
-        <NamedIndividual IRI="#black_skin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#wears"/>
-        <NamedIndividual IRI="#Mr_K"/>
-        <NamedIndividual IRI="#full-face-hood"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
-        <NamedIndividual IRI="#Mrs_L"/>
-        <NamedIndividual IRI="#Greece"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#carries"/>
-        <NamedIndividual IRI="#Mrs_L"/>
-        <NamedIndividual IRI="#shotgun"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#carries"/>
-        <NamedIndividual IRI="#Mrs_L"/>
-        <NamedIndividual IRI="#small-backpack"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSkin"/>
-        <NamedIndividual IRI="#Mrs_L"/>
-        <NamedIndividual IRI="#white_skin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#wears"/>
-        <NamedIndividual IRI="#Mrs_L"/>
-        <NamedIndividual IRI="#full-face-hood"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
-        <NamedIndividual IRI="#Some_M"/>
-        <NamedIndividual IRI="#Africa"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSkin"/>
-        <NamedIndividual IRI="#Some_M"/>
-        <NamedIndividual IRI="#black_skin"/>
-    </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://dbpedia.org/ontology/nationality"/>
         <ObjectProperty IRI="http://dbpedia.org/ontology/hasLocation"/>
